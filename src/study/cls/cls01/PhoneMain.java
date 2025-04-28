@@ -1,0 +1,15 @@
+package study.cls.cls01;
+
+public class PhoneMain {
+
+	public static void main(String[] args) {
+
+		//Phone p1 = new Phone();	//X사용불가X
+		Phone p1 = new Phone("갤럭시21");
+		
+		Phone p2 = new Phone("아이폰14");
+		
+		Phone p3 = new Phone("아이폰15", 300);
+	}
+
+}
