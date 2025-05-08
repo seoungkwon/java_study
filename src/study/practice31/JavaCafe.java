@@ -1,4 +1,4 @@
-package study.pratice31;
+package study.practice31;
 
 public class JavaCafe {
 
