@@ -5,13 +5,13 @@ package study.db.v2;
 //DB 테이블에서 읽어온 데이터를 저장하는 역할
 //DTO (Data Transfer Object)
 public class Dept {  //DeptDTO
-	
+
 	int deptno;
 	String dname;
 	String loc;
-	
+
 	public Dept() {}
-	
+
 	public Dept(int deptno, String dname, String loc) {
 		this.deptno = deptno;
 		this.dname = dname;
@@ -41,7 +41,11 @@ public class Dept {  //DeptDTO
 	public void setLoc(String loc) {
 		this.loc = loc;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Dept [deptno=" + deptno + ", dname=" + dname + ", loc=" + loc + "]";
+	}
 	
 }
+
