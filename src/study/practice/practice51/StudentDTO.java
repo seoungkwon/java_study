@@ -10,17 +10,21 @@ public class StudentDTO {
 	String id;
 	int grade;
 	String jumin;
-	
+
 	//LocalDateTime birthday;
 	String birthday;
 	String tel;
 	int height;
 	int weight;
-	int deptno1;
-	int deptno2;
+	//int deptno1;
+	//int deptno2;
+	int deptno1; // 기본값 : 0  무조건 숫자다. 무조건 값을 가져야한다.
+	//int deptno2; // 기본값:null, Nullable 값이 Null일수도 있다!
+	Integer deptno2;
+	//Integer -> int 타입의 Wrapper 클래스
 	int profno;
-	
-	
+
+
 	public int getStudno() {
 		return studno;
 	}
@@ -81,10 +85,12 @@ public class StudentDTO {
 	public void setDeptno1(int deptno1) {
 		this.deptno1 = deptno1;
 	}
-	public int getDeptno2() {
+	//public int getDeptno2() {
+	public Integer getDeptno2() {
 		return deptno2;
 	}
-	public void setDeptno2(int deptno2) {
+	//public void setDeptno2(int deptno2) {
+	public void setDeptno2(Integer deptno2) {
 		this.deptno2 = deptno2;
 	}
 	public int getProfno() {
@@ -101,6 +107,6 @@ public class StudentDTO {
 				+ jumin + ", birthday=" + birthday + ", tel=" + tel + ", height=" + height + ", weight=" + weight
 				+ ", deptno1=" + deptno1 + ", deptno2=" + deptno2 + ", profno=" + profno + "]";
 	}
-	
-	
+
+
 }
